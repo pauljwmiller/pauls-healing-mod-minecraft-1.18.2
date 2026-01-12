@@ -21,13 +21,13 @@ license="MIT"
 [[mods]] #mandatory
 
 # The modid of the mod
-modId="mymod" #mandatory
+modId="pauls_healing_mod" #mandatory
 
 # The version number of the mod
 version="1.0.0" #mandatory
 
 # A display name for the mod
-displayName="My Mod" #mandatory
+displayName="Paul's Healing Mod" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -59,7 +59,7 @@ Adds custom items such as a syringe with special effects.
 '''
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.mymod]] #optional
+[[dependencies.pauls_healing_mod]] #optional
 
 # the modid of the dependency
 modId="forge" #mandatory
@@ -79,7 +79,7 @@ ordering="NONE"
 side="BOTH"
 
 # Here's another dependency
-[[dependencies.mymod]]
+[[dependencies.pauls_healing_mod]]
 modId="minecraft"
 mandatory=true
 

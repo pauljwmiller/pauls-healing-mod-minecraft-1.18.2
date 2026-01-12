@@ -1,7 +1,7 @@
-package com.paul.mymod.creative;
+package com.paul.pauls_healing_mod.creative;
 
-import com.paul.mymod.MyMod;
-import com.paul.mymod.item.ModItems;
+import com.paul.pauls_healing_mod.MyMod;
+import com.paul.pauls_healing_mod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

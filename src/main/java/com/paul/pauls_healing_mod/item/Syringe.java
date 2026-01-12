@@ -1,4 +1,4 @@
-package com.paul.mymod.item;
+package com.paul.pauls_healing_mod.item;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

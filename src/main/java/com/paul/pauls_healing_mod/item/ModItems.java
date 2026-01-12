@@ -1,9 +1,7 @@
-package com.paul.mymod.item;
+package com.paul.pauls_healing_mod.item;
 
-import com.paul.mymod.MyMod;
-import com.paul.mymod.creative.ModCreativeTab;
+import com.paul.pauls_healing_mod.creative.ModCreativeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, "mymod");
+            DeferredRegister.create(ForgeRegistries.ITEMS, "pauls_healing_mod");
 
     public static final RegistryObject<Item> SYRINGE =
             ITEMS.register("syringe",

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "mymod:item/syringe"
+    "layer0": "pauls_healing_mod:item/syringe"
   }
 }

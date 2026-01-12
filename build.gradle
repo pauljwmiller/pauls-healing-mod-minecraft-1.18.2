@@ -5,6 +5,23 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
+ext {
+    mod_id = "pauls_healing_mod"                 // your mod ID, lowercase
+    mod_name = "Paul's Healing Mod"               // display name
+    mod_version = "1.0.0"             // your version
+    mod_group_id = "paul.pauls_healing_mod"       // your Java package / group
+    mod_authors = "Paul"              // your name
+    mod_description = "A simple healing mod using syringes."
+    mod_license = "MIT"
+
+    // Minecraft / Forge versions
+    minecraft_version = "1.18.2"
+    forge_version = "40.2.0"
+    mapping_channel = "official"
+    mapping_version = "1.18.2"
+}
+
+
 version = mod_version
 group = mod_group_id
 
