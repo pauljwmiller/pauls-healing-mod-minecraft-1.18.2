@@ -24,6 +24,13 @@ public class ModItems {
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)
                     ));
+    public static final RegistryObject<Item> EMPTY_SYRINGE =
+            ITEMS.register("empty_syringe",
+                    () -> new Empty_Syringe(
+                            new Item.Properties()
+                                    .tab(ModCreativeTab.MYMOD_TAB)
+                                    .stacksTo(16)
+                    ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

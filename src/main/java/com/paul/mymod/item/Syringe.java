@@ -22,8 +22,8 @@ public class Syringe extends Item {
 
         if (!player.level.isClientSide) {
 
-            if (target.getHealth() > 1.0F) {
-                target.setHealth(target.getHealth() + 1.0F);
+            if (target.getHealth() < target.getMaxHealth()) {
+                target.setHealth(Math.min(target.getHealth() + 2.0F, target.getMaxHealth()));
 
                 stack.shrink(1);
 
