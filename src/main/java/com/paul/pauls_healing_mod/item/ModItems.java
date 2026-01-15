@@ -38,7 +38,7 @@ public class ModItems {
                     ));
     public static final RegistryObject<Item> EMPTY_SYRINGE =
             ITEMS.register("empty_syringe",
-                    () -> new Empty_Syringe(
+                    () -> new EmptySyringe(
                             new Item.Properties()
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)
@@ -46,7 +46,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> EMPTY_SYRINGE_GOLD =
             ITEMS.register("empty_syringe_gold",
-                    () -> new Empty_Syringe_Gold(
+                    () -> new EmptySyringeGold(
                             new Item.Properties()
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)
@@ -54,7 +54,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> EMPTY_SYRINGE_DIAMOND =
             ITEMS.register("empty_syringe_diamond",
-                    () -> new Empty_Syringe_Diamond(
+                    () -> new EmptySyringeDiamond(
                             new Item.Properties()
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)
