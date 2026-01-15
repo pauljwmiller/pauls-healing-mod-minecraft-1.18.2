@@ -23,8 +23,9 @@ public class BaseSyringe extends Item {
     public InteractionResult interactLivingEntity(ItemStack stack, Player player, LivingEntity target, InteractionHand hand) {
         if (HealingUtils.addHealth(player.level, target, healAmount)) {
             if (!player.getAbilities().instabuild) {
-                player.getCooldowns().addCooldown(this, cooldownTicks);
+                stack.shrink(1);
             }
+            player.getCooldowns().addCooldown(this, cooldownTicks);
         }
         return InteractionResult.SUCCESS;
     }

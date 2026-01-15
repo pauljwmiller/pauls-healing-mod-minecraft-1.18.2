@@ -24,14 +24,14 @@ public class ModItems {
                     ));
     public static final RegistryObject<Item> SYRINGE_GOLD =
             ITEMS.register("syringe_gold",
-                    () -> new Syringe(
+                    () -> new SyringeGold(
                             new Item.Properties()
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)
                     ));
     public static final RegistryObject<Item> SYRINGE_DIAMOND =
             ITEMS.register("syringe_diamond",
-                    () -> new Syringe(
+                    () -> new SyringeDiamond(
                             new Item.Properties()
                                     .tab(ModCreativeTab.MYMOD_TAB)
                                     .stacksTo(16)

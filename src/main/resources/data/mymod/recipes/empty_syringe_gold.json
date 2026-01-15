@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " F",
+    " G"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:gold_ingot"
+    },
+    "G": {
+      "item": "minecraft:glass"
+  }
+},
+"result": {
+  "item": "pauls_healing_mod:empty_syringe_gold"
+}
+}

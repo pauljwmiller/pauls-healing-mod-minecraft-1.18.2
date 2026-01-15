@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pauls_healing_mod:item/empty_syringe_diamond"
+  }
+}

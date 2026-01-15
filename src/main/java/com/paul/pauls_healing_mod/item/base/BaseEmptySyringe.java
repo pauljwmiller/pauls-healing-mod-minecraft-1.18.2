@@ -8,16 +8,19 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 import com.paul.pauls_healing_mod.util.HealingUtils;
+import com.paul.pauls_healing_mod.util.ReplaceItemUtils;
 
 public class BaseEmptySyringe extends Item {
 
     private final float drainAmount;
     private final int cooldownTicks;
+    private final Item replacementItem;
 
-    public BaseEmptySyringe(Properties properties, float drainAmount, int cooldownTicks) {
+    public BaseEmptySyringe(Properties properties, float drainAmount, int cooldownTicks, Item replacementItem) {
         super(properties);
         this.drainAmount = drainAmount;
         this.cooldownTicks = cooldownTicks;
+        this.replacementItem = replacementItem;
     }
 
     @Override
@@ -31,6 +34,9 @@ public class BaseEmptySyringe extends Item {
 
         if (HealingUtils.drainHealth(player.level, player, drainAmount)) {
 
+            if (replacementItem != null) { 
+                ReplaceItemUtils.replaceWithItem(level, player, stack, hand, replacementItem);
+            }
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);
             }

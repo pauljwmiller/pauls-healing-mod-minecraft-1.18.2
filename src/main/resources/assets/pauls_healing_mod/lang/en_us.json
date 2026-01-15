@@ -1,5 +1,9 @@
 {
   "item.pauls_healing_mod.syringe": "Syringe",
+  "item.pauls_healing_mod.syringe_gold": "Syringe (Gold)",
+  "item.pauls_healing_mod.syringe_diamond": "Syringe (Diamond)",
   "item.pauls_healing_mod.empty_syringe": "Empty Syringe",
+  "item.pauls_healing_mod.empty_syringe_gold": "Empty Syringe (Gold)",
+  "item.pauls_healing_mod.empty_syringe_diamond": "Empty Syringe (Diamond)",
   "itemGroup.pauls_healing_mod": "Paul's Healing Mod"
 }

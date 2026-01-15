@@ -4,6 +4,6 @@ import com.paul.pauls_healing_mod.item.base.BaseEmptySyringe;
 
 public class EmptySyringeGold extends BaseEmptySyringe {
     public EmptySyringeGold(Properties properties) {
-        super(properties, 4.0F, 10);
+        super(properties, 4.0F, 10, ModItems.SYRINGE_GOLD.get());
     }
 }
