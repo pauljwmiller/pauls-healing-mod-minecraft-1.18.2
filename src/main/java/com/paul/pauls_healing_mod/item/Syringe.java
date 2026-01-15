@@ -6,6 +6,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import com.paul.pauls_healing_mod.util.HealingUtils;
 
 public class Syringe extends Item {
 
@@ -20,14 +21,10 @@ public class Syringe extends Item {
             LivingEntity target,
             InteractionHand hand) {
 
-        if (!player.level.isClientSide) {
+        if (HealingUtils.addHealth(player.level, target, 2.0F)) {
 
-            if (target.getHealth() < target.getMaxHealth()) {
-                target.setHealth(Math.min(target.getHealth() + 2.0F, target.getMaxHealth()));
-
-                stack.shrink(1);
-
-                player.getCooldowns().addCooldown(this, 20);
+            if (!player.getAbilities().instabuild) { // Not creative mode, etc.
+                player.getCooldowns().addCooldown(this, 10); // 0.5 sec
             }
         }
         return InteractionResult.SUCCESS;
